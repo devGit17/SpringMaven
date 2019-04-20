@@ -7,6 +7,7 @@ node {
    {
      //get maven home path
      def mvnHome=tool name: 'LocalMaven', type: 'maven'
-     sh "${mvnHome}/bin/mvn package"
+     sh "${mvnHome}/bin/mvn compile"
+     echo "compiled successfully"
    }
 }
